@@ -1,0 +1,17 @@
+{
+  "realm": "${sso.realm}",
+  "auth-server-url": "${sso.host_name}",
+  "ssl-required": "external",
+  "resource": "${sso.client_id}",
+  "verify-token-audience": true,
+  "enable-cors" : true,
+  "cors-max-age" : 1000,
+  "cors-allowed-methods" : "*",
+  "cors-allowed-headers" : "*",
+  "cors-exposed-headers" : "*",
+  "credentials": {
+    "secret": "${sso.client_secret}"
+  },
+  "confidential-port": 0,
+  "policy-enforcer": {}
+}

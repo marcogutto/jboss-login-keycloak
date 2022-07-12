@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <title>Home</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta name="theme-color" content="#444"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+		
+		<script>
+			function logout() {
+				
+				setTimeout(() => {  
+			        window.location.href = "http://localhost:8080/login/logout";
+				}, 500);
+
+			}			
+
+        </script>
+        
+    </h:head>
+
+    <h:body>
+    
+        <div id="loader" class="load-bar" style="display: none">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <a href="#" title="Sair" onclick="logout();">
+			Sair
+		</a>
+
+    </h:body>
+</html>
