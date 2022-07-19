@@ -33,6 +33,11 @@
 		<servlet-name>Logout</servlet-name>
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CookieLogout</servlet-name>
+		<url-pattern>/cookies</url-pattern>
+	</servlet-mapping>
 
 	<welcome-file-list>
 		<welcome-file>/pages/home.jsf</welcome-file>
@@ -56,4 +61,5 @@
 	<security-role>
 		<role-name>*</role-name>
 	</security-role>
+
 </web-app>

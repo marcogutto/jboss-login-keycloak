@@ -18,6 +18,22 @@
 			        window.location.href = "http://localhost:8080/login/logout";
 				}, 500);
 
+			}	
+			
+			function logoutLocal() {
+				
+				setTimeout(() => {  
+			        window.location.href = "http://localhost:8080/home/logout";
+				}, 500);
+
+			}	
+			
+			function showCookies() {
+				
+				setTimeout(() => {  
+			        window.location.href = "http://localhost:8080/home/cookies";
+				}, 500);
+
 			}			
 
         </script>
@@ -34,6 +50,18 @@
         
         <a href="#" title="Logout" onclick="logout();">
 			Sair
+		</a>
+		
+		<br/>
+		
+		<a href="#" title="Logout" onclick="logoutLocal();">
+			Sair Local
+		</a>
+		
+		<br/>
+		
+		<a href="#" title="Cookie" onclick="showCookies();">
+			Cookie
 		</a>
 
     </h:body>

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class Logout.
  */
-public class Logout extends HttpServlet {
+public class CookieLogout extends HttpServlet {
     /**
      * Serialização.
      */
@@ -34,17 +34,17 @@ public class Logout extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        HttpSession session = request.getSession(false);
+//        HttpSession session = request.getSession(false);
         
-        request.logout();
-        
-        this.removeCookies(request, response);
+//        request.logout();
         
 //        if (session != null) {
 //        	session.invalidate();
 //        }
-
-        request.getRequestDispatcher(PAGE_LOGIN).forward(request, response);
+        
+        this.removeCookies(request, response);
+        
+//        request.getRequestDispatcher(PAGE_LOGIN).forward(request, response);
     }
     
     /**

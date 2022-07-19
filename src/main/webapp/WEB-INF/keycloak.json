@@ -13,5 +13,6 @@
     "secret": "${sso.client_secret}"
   },
   "confidential-port": 0,
-  "policy-enforcer": {}
+  "policy-enforcer": {},
+  "always-refresh-token": true
 }
